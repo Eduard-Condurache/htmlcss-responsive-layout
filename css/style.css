@@ -46,6 +46,21 @@ button {
     margin-bottom: 20px;
 }
 
+.circle-container {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: auto; 
+  }
+
+.circle-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
+  }
+  
 
 /* HEADER */
 
@@ -100,14 +115,59 @@ section {
 #intro .card {
     background-color: #B5DDFF;
     border-radius: 12px;
-    padding: 10px;
+    padding: 40px 20px;
+    overflow: hidden;
 }
 
+#intro .image-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
 
 #intro .image-container img {
-    width: 200px;
-    height: 100%;
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    
 }
+
+#intro .card {
+    height: 100%;
+    text-align: center;
+}
+
+#intro .text-left {
+    text-align: left;
+    margin-right: 70px;
+}
+
+#intro h2,
+#intro p,
+#intro button,
+#intro i {
+    margin-bottom: 20px;
+}
+
+#intro p {
+    line-height: 30px;
+}
+
+#intro i,h2 {
+    color: #0084FD;
+}
+
+#intro p {
+    color: #596D7E;
+    font-weight: 600;
+}
+
+#intro i {
+    font-size: 5em;
+}
+
+
+
 
 /* section 2 */
 
@@ -135,23 +195,24 @@ section {
     text-align: center;
 }
 
-#section-3 .circle-container {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: auto; 
-  }
-
-#section-3 .circle-container img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    display: block; 
-  } 
 
 /* section 4 */
 
+/* section 5 */
+
+#section-5 .circle-container {
+    margin: 0;
+}
+
+#section-5 .my-col-60 {
+    padding-right: 50px;
+}
+
+/* FOOTER */
+
+.footer-top {
+    text-align: center;
+}
 
 /* RESPONSIVE */
 
@@ -168,21 +229,30 @@ section {
         width: calc(((100% / 3)* 2) - 20px);
     }
 
-    #section-3 .card-container {
+    .card-container {
         display: flex;
     }
 
-    #section-3 .circle-container {
+    .circle-container {
         margin: 0;
     }
     
-    #section-3 .my-col-30 {
-        width: 20%;
+    .my-col-30 {
+        width: 30%;
     }
 
-    #section-3 .my-col-30 {
-        width: 80%;
+    .my-col-70 {
+        width: 70%;
     }
+
+    .my-col-60 {
+        width: 60%;
+    }
+
+    .my-col-40 {
+        width: 40%;
+    }
+
 
 }
 
@@ -190,6 +260,7 @@ section {
     #section-4 .my-col.my-col-tablet-1-3 {
         width: calc((100% / 2) - 20px);
     }
+
 }
 
 /* desktop */
