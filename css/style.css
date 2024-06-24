@@ -123,6 +123,35 @@ section {
     text-align: center;
 }
 
+/* section 3 */
+
+#section-3 .card-container {
+    background-color: #9792E4;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+#section-3 .title-section3 {
+    text-align: center;
+}
+
+#section-3 .circle-container {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: auto; 
+  }
+
+#section-3 .circle-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
+  } 
+
+/* section 4 */
+
 
 /* RESPONSIVE */
 
@@ -137,6 +166,22 @@ section {
     
     .my-col.my-col-tablet-2-3 {
         width: calc(((100% / 3)* 2) - 20px);
+    }
+
+    #section-3 .card-container {
+        display: flex;
+    }
+
+    #section-3 .circle-container {
+        margin: 0;
+    }
+    
+    #section-3 .my-col-30 {
+        width: 20%;
+    }
+
+    #section-3 .my-col-30 {
+        width: 80%;
     }
 
 
