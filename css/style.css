@@ -272,6 +272,47 @@ section {
 
 /* section 4 */
 
+#section-4 {
+    background-color: var(--color-purple);
+}
+
+#section-4 .title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 50px;
+}
+
+#section-4 .card {
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#section-4 .card h3 {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    color: var(--color-purple);
+}
+
+#section-4 .card h2 {
+    font-size: 2.5rem;
+    color: var(--color-purple);
+}
+
+#section-4 .card p {
+    margin-bottom: 35px;
+}
+
+
+#section-4 .card .my-btn{
+    font-weight: 600;
+    padding:10px 50px;
+}
+
+
+
+
 /* section 5 */
 
 #section-5 .circle-container {
@@ -396,6 +437,12 @@ section {
     /* SECTION 3 */
 
     #section-3 .title-section3 h2 {
+        font-size: 3rem;
+    }
+
+    /* SECTION 4 */
+
+    #section-4 .title h2 {
         font-size: 3rem;
     }
 
